@@ -21,7 +21,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">김홍석</span>
         <span class="d-none d-lg-block">
-            <img width="100" height="100" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="index/profile.jpg" alt="프로필 사진">
+            <img width="100" height="100" class="img-fluid img-profile rounded-circle mx-auto mb-2" th:src="@{/index/img/profile.jpg}" alt="프로필 사진">
         </span>
     </a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="메뉴 열기">
@@ -70,13 +70,14 @@
                 <div class="flex-grow-1">
                     <h3 class="mb-0">웨인테크놀로지</h3>
                     <div class="subheading mb-3">핀테크 회사</div>
-                    <p>
-                        고객사 서버이관 및 php 버전업 작업
-                        채권관리 솔루션 유지보수
-                        랜딩페이지 작업
-                        스크래핑 모듈, 연동 api 개발
-                        네이버 클라우드 OCR api를 통한 pdf문서 데이터화 작업
-                    </p>
+                    <ul>
+                        <li>고객사 서버이관 및 php 버전업 작업</li>
+                        <li>채권관리 솔루션 유지보수</li>
+                        <li>랜딩페이지 작업</li>
+                        <li>전문송수신 연동 작업</li>
+                        <li>스크래핑 모듈, 연동 api 개발</li>
+                        <li>네이버 클라우드 OCR api를 통한 pdf문서 데이터화 작업</li>
+                    </ul>
                 </div>
                 <div class="flex-shrink-0"><span class="text-primary">2023년 9월 - 2025년6월</span></div>
             </div>
@@ -121,6 +122,7 @@
             <ul class="list-inline dev-icons d-flex">
                 <li class="list-inline-item d-flex"><img style="filter:grayscale(1)" width="48" height="48" src="https://img.icons8.com/color/48/spring-logo.png" alt="spring-logo"></li>
                 <li class="list-inline-item d-flex"><i class="fab fa-laravel"></i></li>
+                <li class="list-inline-item d-flex"><img style="filter:grayscale(1)" width="48" height="48" th:src="@{/index/img/fastapi.webp}" alt="fastapi-logo"></li>
             </ul>
             <div class="subheading mb-3">데이터베이스</div>
             <ul class="list-inline dev-icons d-flex">
@@ -141,6 +143,124 @@
     <section class="resume-section" id="projects">
         <div class="resume-section-content">
             <h2 class="mb-5">프로젝트</h2>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">개인토이프로젝트</div>
+                        <img class="card-img-top" style="height: 158px;" th:src="@{/index/img/overwatch.jpg}" alt="...">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Overwatch 정적사이트</h5>
+                                메이플스토리웹사이트 레이아웃적용
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.notion.so/hongdolscoding/CSS-496f9aa4285e4dbdbb7aa58ff70d3c6f">자세히</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">팀토이프로젝트</div>
+                        <img class="card-img-top" style="height: 158px;" th:src="@{/index/img/prospecs.png}" alt="...">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Prospecs</h5>
+                                클론코딩
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">팀프로젝트</div>
+                        <img class="card-img-top" style="height: 158px;" th:src="@{/index/img/알뜰살뜰.png}" alt="...">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">알뜰살뜰</h5>
+                                공유경제웹플랫폼
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">팀프로젝트</div>
+                        <img class="card-img-top" style="height: 158px;" th:src="@{/index/img/KHTIME.png}" alt="...">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">KHTIME</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <span>커뮤니티사이트</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; right: 0.5rem">회사프로젝트(웨인)</div>
+                        <img class="card-img-top" style="height: 158px;" th:src="@{/index/img/Halo.png}" alt="...">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">HALO</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <span>전자소송자동화모듈</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; right: 0.5rem">회사프로젝트(웨인)</div>
+                        <img class="card-img-top" style="height: 158px;" th:src="@{/index/img/TAXBILL.png}" alt="...">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">TAXBILL</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <span>제3자 세금계산서 발급여부 확인 API</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5"> </div>
+                <div class="col mb-5"> </div>
+            </div>
 
         </div>
     </section>
@@ -150,9 +270,9 @@
     <section class="resume-section" id="awards">
         <div class="resume-section-content">
             <h2 class="mb-5">자격증</h2>
-            <ul class="fa-ul mb-0">
-                <li><i class="fas fa-dot-circle text-success mx-1"></i>정보처리기사</li>
-                <li><i class="fas fa-dot-circle text-success mx-1"></i>SQLD</li>
+            <ul>
+                <li>정보처리기사</li>
+                <li>SQLD</li>
             </ul>
         </div>
     </section>
