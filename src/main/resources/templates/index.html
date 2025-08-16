@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.notion.so/hongdolscoding/CSS-496f9aa4285e4dbdbb7aa58ff70d3c6f">자세히</a></div>
+                            <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalOverwatch">자세히</button></div>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                            <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalProspecs">자세히</button></div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                            <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalSemiproject">자세히</button></div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                            <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalFinalproject">자세히</button></div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                            <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalHalo">자세히</button></div>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">자세히</a></div>
+                            <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalTaxbill">자세히</button></div>
                         </div>
                     </div>
                 </div>
@@ -277,6 +277,12 @@
         </div>
     </section>
 </div>
+<div th:replace="modals/overwatch :: modal"></div>
+<div th:replace="modals/prospecs :: modal"></div>
+<div th:replace="modals/semiproject :: modal"></div>
+<div th:replace="modals/finalproject :: modal"></div>
+<div th:replace="modals/halo :: modal"></div>
+<div th:replace="modals/taxbill :: modal"></div>
 
 <!-- Bootstrap core JS -->
 <script th:src="@{https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js}"></script>
