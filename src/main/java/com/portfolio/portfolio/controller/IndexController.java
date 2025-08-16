@@ -10,4 +10,9 @@ public class IndexController {
     public  String index(){
         return "index";
     }
+
+    @GetMapping("/overwatch")
+    public  String overwatch(){
+        return "project/overwatch";
+    }
 }
