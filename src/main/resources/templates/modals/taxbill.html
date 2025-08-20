@@ -3,16 +3,34 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTaxbillLabel">📌 Halo 프로젝트 상세</h5>
+                    <h5 class="modal-title" id="modalTaxbillLabel">📌 TAXBILL 프로젝트 상세</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
                 </div>
                 <div class="modal-body">
-                    <p>이 프로젝트는 메이플스토리 웹사이트 레이아웃을 Taxbill 스타일로 구현한 정적 사이트입니다.</p>
+                    <h5>구현목적</h5>
+                    <p>제 3자 세금계산서 발급여부를 솔루션사이트에서 확인가능하도록 API 구현</p>
+                    <h5>언어 / 프레임워크 / DB</h5>
                     <ul class="checklist">
-                        <li><input type="checkbox" checked disabled> HTML/CSS 레이아웃 구현</li>
-                        <li><input type="checkbox" disabled> 반응형 디자인 적용</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>Laravel</li>
+                        <li>Postgresql</li>
                     </ul>
-                    <pre>npm install</pre>
+                    <h5>구현기능</h5>
+                    <ul class="checklist">
+                        <li>세금계산서 발급여부를 확인하는 스크래핑 모듈(윈도우서버)</li>
+                        <li>발급여부에 따른 팝업창 캡처 이미지 적재</li>
+                        <li>솔루션<->윈도우서버간 통신용 RestAPI 구현(Laravel)</li>
+                        <li>API 토큰/권한관리 및 건수체크를 위한 관리자페이지 구현(Laravel)</li>
+                    </ul>
+                    <h5>주요 문제 및 해결</h5>
+                    <ul class="checklist">
+                        <li>env() 메서드가 반복문 내에서 null값으로 초기화되는 오류</li>
+                        <li>alert 메서드로 인해 생기는 경고창이 있을경우 python 스크래핑 모듈에서 화면캡처가 안되는 문제</li>
+                    </ul>
+                    <hr>
+                    <p class="mb-0">내부망 서비스라 사이트 링크 제공 불가</p>
+                    <p>테스트 및 기능 구현을 잘되었으나 수요 및 이용건수가 적어 서비스화 되지는 못했음</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
